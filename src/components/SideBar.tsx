@@ -9,7 +9,7 @@ interface MovieGenres{
 interface sideBarProps{
   moviesGenres: MovieGenres[];
   selectedGenreId:number;
-  handleClickButton:any;
+  handleClickButton:(num:number)=>void;
 }
 
 export function SideBar(props:sideBarProps) {
